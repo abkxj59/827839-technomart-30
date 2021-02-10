@@ -1,0 +1,412 @@
+/* Шрифты */
+@font-face {
+  font-family: "Cuprum";
+  src: url(../fonts/cuprum.woff2);
+  src: url(../fonts/cuprum.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cuprum";
+  src: url(../fonts/cuprumbold.woff2);
+  src: url(../fonts/cuprumbold.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cuprum";
+  src: url(../fonts/cuprumitalic.woff2);
+  src: url(../fonts/cuprumitalic.woff);
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Cuprum";
+  src: url(../fonts/cuprumbolditalic.woff2);
+  src: url(../fonts/cuprumbolditalic.woff);
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/ptsans.woff2);
+  src: url(../fonts/ptsans.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/ptsansbold.woff2);
+  src: url(../fonts/ptsansbold.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Цвета */
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --blue: #32425c;
+  --dark-blue: #293449;
+  --darkest-blue: #212a3a;
+  --special-dark-blue: #1d2739;
+  --special-darkest-blue: #161d29;
+  --light-blue: #3d546f;
+  --sky: #f1f5f7;
+  --red: #ee3643;
+  --medium-red: #ca2c37;
+  --dark-red: #ba2732;
+  --gold: #ffd180;
+  --green: #63a63e;
+  --pale-green: #518534;
+  --bright-green: #5fbb2d;
+  --dark-green: #367315;
+  --gray: #c5c5c5;
+  --dark-gray: #b5b5b5;
+  --light-gray: #e5e5e5;
+  --special-gray: #a9a9a9;
+  --special-light-gray: #eaeaea;
+  --beige: #f7f3ec;
+  --yellow: #ffbf47;
+  --special-yellow: #ffc047;
+  --special-blue: #3bbce3;
+  --lilac: #dc91d8;
+  --special-green: #8ed78f;
+  --transparent: rgba(255, 255, 255, 0.5);
+  --transparent30: rgba(255, 255, 255, 0.3);
+  --logo-shadow: rgba(0, 0, 0, 0.24);
+  --transparent-dark: rgba(0, 0, 0, 0.25);
+  --transparent-gray: rgba(197, 197, 197, 0.3);
+  --transparent-special-gray: rgba(169, 169, 169, 0.3);
+}
+
+/* global */
+body {
+  font-family: "Cuprum", "Verdana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--black);
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.heading {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+.button {
+  background-color: var(--red);
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--white);
+  border: none;
+}
+/* header */
+.header-top {
+  font-size: 18px;
+  line-height: 24px;
+  background-color: var(--dark-blue);
+}
+.header-top a {
+  color: var(--white);
+}
+.header-logo {
+  padding: 12px 56px;
+  background-color: var(--red);
+  box-shadow: inset 0px -5px 0px var(--logo-shadow);
+}
+.header-logo:focus {
+  background-color: var(--dark-red);
+}
+.search input {
+  background-color: transparent;
+  color: var(--white);
+  border: none;
+}
+.search input::placeholder {
+  color: var(--white);
+}
+.search input:focus {
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px white solid;
+}
+.button-favorite:focus,
+.button-cart:focus {
+  color: var(--transparent);
+}
+.button-order {
+  background-color: var(--green);
+}
+.button-order:hover {
+  background-color: var(--bright-green);
+}
+.button-order:focus {
+  color: var(--transparent);
+  background-color: var(--green);
+}
+.header-bottom {
+  background-color: var(--sky);
+}
+.header-about p {
+  color: var(--red);
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+}
+.header-contacts a {
+  color: var(--red);
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.header-contacts p {
+  color: var(--blue);
+  font-size: 14px;
+  line-height: 24px;
+}
+.account .button {
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 21px;
+  line-height: 21px;
+}
+.account .button:focus {
+  color: var(--gray);
+}
+.acc-link {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--blue);
+}
+.acc-link:hover {
+  color: var(--red);
+}
+.acc-link:focus {
+  color: var(--gray);
+}
+.main-nav {
+  background-color: var(--blue);
+}
+.main-nav ul {
+  list-style: none;
+}
+.main-nav a {
+  color: var(--white);
+}
+.main-nav a:hover {
+  background-color: var(--dark-blue);
+}
+.main-nav a:focus {
+  background-color: var(--special-dark-blue);
+  color: var(--transparent);
+}
+
+/* Товары и услуги */
+.goods ul {
+  list-style: none;
+}
+.goods-list h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--white);
+}
+.goods-list .button {
+  background-color: var(--transparent30);
+  color: var(--white);
+  text-transform: uppercase;
+}
+.goods-list .button:hover {
+  background-color: var(--transparent-gray);
+}
+.goods-list .button:focus {
+  background-color: var(--transparent-special-gray);
+}
+.materials {
+  background-color: var(--yellow);
+}
+.tools {
+  background-color: var(--special-blue);
+}
+.machines {
+  background-color: var(--lilac);
+}
+.sale {
+  background-color: var(--special-green);
+}
+.delivery {
+  background-color: var(--special-yellow);
+}
+
+/* слайдер */
+.slider {
+  background-color: var(--transparent-gray);
+  color: var(--white);
+}
+.slider h3 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: var(--white)
+}
+
+/* Популярные товары */
+.hits-header {
+  background-color: var(--beige);
+}
+.hits-list {
+  list-style: none;
+}
+.product {
+  border: 1px solid var(--special-light-gray);
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-weight: 700;
+}
+.product img {
+  background-color: var(--transparent-gray);
+}
+.product h3 {
+  font-size: 18px;
+  line-height: 20px;
+}
+.product del {
+  font-size: 17px;
+  line-height: 18px;
+  color: var(--special-gray);
+}
+.price {
+  background-image: url(../img/price-tag.svg);
+  background-repeat: no-repeat;
+  color: var(--white);
+}
+.product .button {
+  font-family: "Cuprum", "Verdana", sans-serif;
+}
+.button-buy {
+  background: var(--green);
+  box-shadow: inset 0px -3px 0px var(--dark-green);
+  border-radius: 2px;
+}
+.button-buy:hover {
+  background-color: var(--bright-green);
+}
+.button-buy:focus {
+  background-color: var(--pale-green);
+}
+.button-to-fav {
+  border: 3px solid var(--green);
+  border-radius: 2px;
+  background-color: var(--white);
+  color: var(--blue);
+}
+.button-to-fav:hover {
+  border-color: var(--blue);
+}
+.button-to-fav:focus {
+  border-color: var(--blue);
+  opacity: 0.5;
+}
+
+/* Популярные производители */
+.brands-header {
+  background-color: var(--beige);
+}
+.brands ul {
+  list-style: none;
+}
+
+/* Сервисы */
+.services {
+  background-color: var(--sky);
+}
+.service-switch label {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--blue);
+  box-shadow: 0px 1px 0px var(--dark-blue), inset 0px 1px 0px #405069;
+}
+.service-switch input:checked + label{
+  color: var(--blue);
+  background-color: var(--white);
+  box-shadow: 0px 1px 0px var(--white);
+}
+.services ul {
+  list-style: none;
+}
+.services-item {
+  background: none;
+}
+.services h2 {
+  color: var(--black);
+}
+.services p {
+  color: var(--black);
+}
+
+/* О нас и контакты */
+.main-column h2 {
+  color: var(--black);
+}
+.main-column p {
+  color: var(--black);
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+.main-about ul {
+  list-style-image: url(../img/list-marker.svg);
+  font-size: 18px;
+  line-height: 24px;
+}
+.main-contacts img {
+  background-color: var(--beige);
+}
+
+/* footer */
+.footer-top {
+  background-color: var(--blue);
+  color: var(--white);
+}
+.footer-logo {
+  padding: 20px 41px;
+  background: var(--red);
+  box-shadow: inset 0px -5px 0px var(--logo-shadow);
+}
+.footer-contacts .tel {
+  color: var(--white);
+}
+.footer-nav ul {
+  list-style: none;
+}
+.footer-nav-global a {
+  color: var(--white);
+}
+.footer-nav-catalog a {
+  color: var(--gold);
+}
+.footer-bottom {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  font-size: 16px;
+  line-height: 18px;
+}
+.social ul {
+  list-style: none;
+}
+.social a {
+  color: var(--white);
+}
+.footer-links a {
+  color: var(--gold);
+}
