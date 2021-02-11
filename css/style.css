@@ -412,3 +412,111 @@ img {
 .footer-links a {
   color: var(--gold);
 }
+
+/* Каталог */
+/* Хлебные крошки */
+.bread-crumbs {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+/*Страница*/
+.catalog-heading {
+  background-color: var(--sky);
+}
+/*Фильтр*/
+.filter {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.filter-heading {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  background-color: var(--beige);
+}
+.filter-title {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.filter-price input {
+  background-color: var(--beige);
+  font-size: 17px;
+  line-height: 18px;
+}
+.filter .button {
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: var(--white);
+  border: 1px solid var(--light-gray);
+  color: var(--black);
+}
+
+/* Сортировка */
+.sort {
+  background-color: var(--beige);
+}
+.sort-heading {
+font-family: "PT Sans", "Tahoma", sans-serif;
+font-size: 13px;
+line-height: 18px;
+font-weight: 400;
+text-transform: uppercase;
+}
+.sort label {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--transparent-black);
+  border-bottom: 1px dotted var(--red);
+}
+.sort label:hover {
+  color: var(--black);
+  border-bottom: 1px solid var(--red);
+}
+.sort input:checked + label {
+  color: var(--red);
+  border: none;
+}
+
+/* Пагинация */
+.pagination-item a {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--black);
+  border: 1px solid var(--light-gray);
+  border-radius: 2px;
+  padding: 10px 15px;
+}
+.pagination-item a:hover {
+  border-color: var(--gray);
+}
+.pagination-item a:focus {
+  border-color: var(--red);
+}
+.pagination-item-current a {
+  background-color: var(--red);
+  border-color: var(--red);
+  color: var(--white);
+}
+.pagination-item-current a:hover {
+  border-color: var(--red);
+}
+
+/* Пара слов о перфораторах*/
+.description {
+  background-color: var(--sky);
+}
+.description .heading {
+  color: var(--black);
+}
