@@ -451,7 +451,7 @@ img {
   line-height: 18px;
 }
 .filter .button {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   line-height: 18px;
   background-color: var(--white);
