@@ -23,7 +23,7 @@
         <form class="search">
           <label>
             <img src="https://via.placeholder.com/20" alt="Поиск">
-            <input type="search" id="search-in-header" placeholder="Поиск:">
+            <input class="search-input" type="search" id="search-in-header" placeholder="Поиск:">
           </label>
         </form>
         <a class="button-favorite" href="#"><p><img class="icon" src="https://via.placeholder.com/20" alt="Закладки">Закладки: 0</p></a>
@@ -34,7 +34,7 @@
         <div class="header-column">
           <section class="header-about column-item">
             <h3 class="heading">О нас</h3>
-            <p>
+            <p class="header-about-text">
               Интернет-магазин<br>
               строительных материалов<br>
               и инструментов для ремонта
@@ -43,7 +43,7 @@
           <section class="column-item header-contacts">
             <h3 class="heading">Контакты</h3>
             <a class="tel" href="tel:+78125550555"><img class="icon" src="https://via.placeholder.com/20" alt="tel">+7 (812) 555-05-55</a>
-            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p class="header-contacts-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </section>
           <section class="column-item account">
             <div class="login">
@@ -80,27 +80,27 @@
         <h2 class="heading">Товары и услуги</h2>
         <ul class="goods-list">
           <li class="goods-item materials">
-            <h3>Материалы</h3>
+            <h3 class="goods-title">Материалы</h3>
             <img class="icon" src="https://via.placeholder.com/70" alt="Материалы">
             <a class="button" href="#">На любой вкус</a>
           </li>
           <li class="goods-item tools">
-            <h3>Инструмент</h3>
+            <h3 class="goods-title">Инструмент</h3>
             <img class="icon" src="https://via.placeholder.com/70" alt="Инструмент">
             <a class="button" href="#">На все случаи</a>
           </li>
           <li class="goods-item machines">
-            <h3>Техника</h3>
+            <h3 class="goods-title">Техника</h3>
             <img class="icon" src="https://via.placeholder.com/70" alt="Техника">
             <a class="button" href="#">Для стройки</a>
           </li>
           <li class="goods-item sale">
-            <h3>Скидки 50%</h3>
+            <h3 class="goods-title">Скидки 50%</h3>
             <img class="icon" src="https://via.placeholder.com/70" alt="Скидки">
             <a class="button" href="#">На 350 товаров</a>
           </li>
           <li class="goods-item delivery">
-            <h3>Доставка</h3>
+            <h3 class="goods-title">Доставка</h3>
             <img class="icon" src="https://via.placeholder.com/70" alt="Доставка">
             <a class="button" href="#">Бесплатно</a>
           </li>
@@ -137,9 +137,9 @@
           <li class="hits-item">
             <article class="product">
               <img class="product-img" src="img/product_bfg9000.png" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
-              <h3>Перфоратор BOSCH BFG 9000</h3>
-              <del>32500 P.</del>
-              <p class="price">25500 P.</p>
+              <h3 class="product-title">Перфоратор BOSCH BFG 9000</h3>
+              <del class="old-price">32500 P.</del>
+              <p class="price-tag">25500 P.</p>
               <button class="button button-buy" type="button"><img class="icon" src="https://via.placeholder.com/15" alt="">Купить</button>
               <button class="button button-to-fav" type="button">В закладки</button>
             </article>
@@ -147,9 +147,9 @@
           <li class="hits-item">
             <article class="product">
               <img class="product-img" src="img/product_bfg3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
-              <h3>Перфоратор BOSCH BFG 3000</h3>
-              <del>22500 P.</del>
-              <p class="price">15500 P.</p>
+              <h3 class="product-title">Перфоратор BOSCH BFG 3000</h3>
+              <del class="old-price">22500 P.</del>
+              <p class="price-tag">15500 P.</p>
               <button class="button button-buy" type="button"><img class="icon" src="https://via.placeholder.com/15" alt="">Купить</button>
               <button class="button button-to-fav" type="button">В закладки</button>
             </article>
@@ -157,9 +157,9 @@
           <li class="hits-item">
             <article class="product">
               <img class="product-img" src="img/product_bfg6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-              <h3>Перфоратор BOSCH BFG 6000</h3>
-              <del>30500 P.</del>
-              <p class="price">25500 P.</p>
+              <h3 class="product-title">Перфоратор BOSCH BFG 6000</h3>
+              <del class="old-price">30500 P.</del>
+              <p class="price-tag">25500 P.</p>
               <button class="button button-buy" type="button"><img class="icon" src="https://via.placeholder.com/15" alt="">Купить</button>
               <button class="button button-to-fav" type="button">В закладки</button>
             </article>
@@ -167,9 +167,9 @@
           <li class="hits-item">
             <article class="product">
               <img class="product-img" src="img/product_bfg2000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
-              <h3>Перфоратор BOSCH BFG 2000</h3>
-              <del>22500 P.</del>
-              <p class="price">12500 P.</p>
+              <h3 class="product-title">Перфоратор BOSCH BFG 2000</h3>
+              <del class="old-price">22500 P.</del>
+              <p class="price-tag">12500 P.</p>
               <button class="button button-buy" type="button"><img class="icon" src="https://via.placeholder.com/15" alt="">Купить</button>
               <button class="button button-to-fav" type="button">В закладки</button>
             </article>
@@ -183,20 +183,20 @@
           <a class="button" href="#">Все производители</a>
         </header>
         <ul class="brands-list">
-          <li class="brands-item"><a href="#"><img class="brand-img" src="img/logo-bosch.png" width="220" height="145" alt="логотип BOSCH"></a></li>
-          <li class="brands-item"><a href="#"><img class="brand-img" src="img/logo-makita.png" width="220" height="145" alt="логотип Makita"></a></li>
-          <li class="brands-item"><a href="#"><img class="brand-img" src="img/logo-dewalt.png" width="220" height="145" alt="логотип DeWALT"></a></li>
-          <li class="brands-item"><a href="#"><img class="brand-img" src="img/logo-intersckol.png" width="220" height="145" alt="логотип Интерскол"></a></li>
-          <li class="brands-item"><a href="#"><img class="brand-img" src="img/logo-hitachi.png" width="220" height="145" alt="логотип HITACHI"></a></li>
-          <li class="brands-item"><a href="#"><img class="brand-img" src="img/logo-lg.png" width="220" height="145" alt="логотип LG"></a></li>
-          <li class="brands-item"><a href="#"><img class="brand-img" src="img/logo-aeg.png" width="220" height="145" alt="логотип AEG"></a></li>
-          <li class="brands-item"><a href="#"><img class="brand-img" src="img/logo-metabo.png" width="220" height="145" alt="логотип metabo"></a></li>
+          <li class="brands-item"><a class="brand-link" href="#"><img class="brand-img" src="img/logo-bosch.png" width="220" height="145" alt="логотип BOSCH"></a></li>
+          <li class="brands-item"><a class="brand-link" href="#"><img class="brand-img" src="img/logo-makita.png" width="220" height="145" alt="логотип Makita"></a></li>
+          <li class="brands-item"><a class="brand-link" href="#"><img class="brand-img" src="img/logo-dewalt.png" width="220" height="145" alt="логотип DeWALT"></a></li>
+          <li class="brands-item"><a class="brand-link" href="#"><img class="brand-img" src="img/logo-intersckol.png" width="220" height="145" alt="логотип Интерскол"></a></li>
+          <li class="brands-item"><a class="brand-link" href="#"><img class="brand-img" src="img/logo-hitachi.png" width="220" height="145" alt="логотип HITACHI"></a></li>
+          <li class="brands-item"><a class="brand-link" href="#"><img class="brand-img" src="img/logo-lg.png" width="220" height="145" alt="логотип LG"></a></li>
+          <li class="brands-item"><a class="brand-link" href="#"><img class="brand-img" src="img/logo-aeg.png" width="220" height="145" alt="логотип AEG"></a></li>
+          <li class="brands-item"><a class="brand-link" href="#"><img class="brand-img" src="img/logo-metabo.png" width="220" height="145" alt="логотип metabo"></a></li>
         </ul>
       </section>
 
       <section class="services">
-        <h2 class="heading">Сервисы</h2>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами!
+        <h2 class="heading services-heading">Сервисы</h2>
+        <p class="services-text">Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <form class="service-switch">
           <input type="radio" id="delivery" name="service" value="delivery" checked>
@@ -209,13 +209,13 @@
         <ul class="services-list">
           <li class="services-item delivery">
             <h3 class="heading">Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+            <p class="text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
               Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
             <img class="service-img" src="https://via.placeholder.com/450x250" alt="Доставка">
           </li>
           <li class="services-item guarantee">
             <h3 class="heading">Гарантия</h3>
-            <p>Если купленный у нас товар поломается или заискрит,
+            <p class="text">Если купленный у нас товар поломается или заискрит,
               а таже в случае пожара, спровоцированного его возгоранием,
               вы всегда можете быть уверены в нашей гарантии. Мы обменяем
               сгоревший товар на новый. Дом уж восстановите как-нибудь сами</p>
@@ -223,8 +223,8 @@
           </li>
           <li class="services-item credit">
             <h3 class="heading">Кредит</h3>
-            <p>Залезть в долговую яму стало проще!
-              Кредитныеконсультанты придут вам на помощь.</p>
+            <p class="text">Залезть в долговую яму стало проще!
+              Кредитные консультанты придут вам на помощь.</p>
             <img class="service-img" src="https://via.placeholder.com/450x250" alt="Кредит">
             <a class="button" href="#">Отправить заявку</a>
           </li>
@@ -234,9 +234,9 @@
       <div class="main-column">
         <section class="column-item main-about">
           <h2 class="heading">Компания "Техномарт"</h2>
-          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
+          <p class="text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
             ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-          <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+          <p class="text">Мы можем доставить ваш товар в самые отдаленные точки России!
             Техномарт работает со многими транспортными компаниями:</p>
           <ul class="shippers-list">
             <li class="shippers-item">Деловые линии</li>
@@ -248,7 +248,7 @@
 
         <section class="column-item main-contacts">
           <h2 class="heading">Контакты</h2>
-          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+          <p class="text">Вы можете забрать товар сами, заехав в наш офис:</p>
           <img class="map" src="img/map.png" width="300" height="158" alt="Карта">
           <button class="button" type="button">Заблудились? Напишите нам!</button>
         </section>

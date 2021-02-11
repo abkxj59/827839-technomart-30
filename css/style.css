@@ -75,7 +75,9 @@
   --transparent: rgba(255, 255, 255, 0.5);
   --transparent30: rgba(255, 255, 255, 0.3);
   --logo-shadow: rgba(0, 0, 0, 0.24);
+  --brand-shadow: rgba(0, 0, 0, 0.15);
   --transparent-dark: rgba(0, 0, 0, 0.25);
+  --transparent-black: rgba(0, 0, 0, 0.3);
   --transparent-gray: rgba(197, 197, 197, 0.3);
   --transparent-special-gray: rgba(169, 169, 169, 0.3);
 }
@@ -109,6 +111,26 @@ img {
   color: var(--white);
   border: none;
 }
+.social ul,
+.footer-nav ul,
+.services ul,
+.main-nav ul,
+.goods ul,
+.hits-list,
+.brands ul,
+.products ul,
+.bread-crumbs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.text {
+  color: var(--black);
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
 /* header */
 .header-top {
   font-size: 18px;
@@ -126,15 +148,15 @@ img {
 .header-logo:focus {
   background-color: var(--dark-red);
 }
-.search input {
+.search-input {
   background-color: transparent;
   color: var(--white);
   border: none;
 }
-.search input::placeholder {
+.search-input::placeholder {
   color: var(--white);
 }
-.search input:focus {
+.search-input:focus {
   background-color: var(--white);
   color: var(--black);
   border: 1px white solid;
@@ -156,19 +178,19 @@ img {
 .header-bottom {
   background-color: var(--sky);
 }
-.header-about p {
+.header-about-text {
   color: var(--red);
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
 }
-.header-contacts a {
+.header-contacts .tel {
   color: var(--red);
   font-size: 21px;
   line-height: 30px;
   font-weight: 700;
 }
-.header-contacts p {
+.header-contacts-text {
   color: var(--blue);
   font-size: 14px;
   line-height: 24px;
@@ -196,9 +218,6 @@ img {
 .main-nav {
   background-color: var(--blue);
 }
-.main-nav ul {
-  list-style: none;
-}
 .main-nav a {
   color: var(--white);
 }
@@ -211,10 +230,7 @@ img {
 }
 
 /* Товары и услуги */
-.goods ul {
-  list-style: none;
-}
-.goods-list h3 {
+.goods-title {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -252,7 +268,7 @@ img {
   background-color: var(--transparent-gray);
   color: var(--white);
 }
-.slider h3 {
+.slider .heading {
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
@@ -263,27 +279,24 @@ img {
 .hits-header {
   background-color: var(--beige);
 }
-.hits-list {
-  list-style: none;
-}
 .product {
   border: 1px solid var(--special-light-gray);
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-weight: 700;
 }
-.product img {
+.product-img {
   background-color: var(--transparent-gray);
 }
-.product h3 {
+.product-title {
   font-size: 18px;
   line-height: 20px;
 }
-.product del {
+.old-price {
   font-size: 17px;
   line-height: 18px;
   color: var(--special-gray);
 }
-.price {
+.price-tag {
   background-image: url(../img/price-tag.svg);
   background-repeat: no-repeat;
   color: var(--white);
@@ -320,8 +333,12 @@ img {
 .brands-header {
   background-color: var(--beige);
 }
-.brands ul {
-  list-style: none;
+.brand-link:hover {
+  filter: drop-shadow(0px 4px 20px var(--brand-shadow));
+}
+.brand-link:focus {
+  filter: drop-shadow(0px 4px 20px var(--brand-shadow));
+  opacity: 0.5;
 }
 
 /* Сервисы */
@@ -336,33 +353,24 @@ img {
   background-color: var(--blue);
   box-shadow: 0px 1px 0px var(--dark-blue), inset 0px 1px 0px #405069;
 }
+.service-switch label:hover {
+  background-color: var(--dark-blue);
+}
 .service-switch input:checked + label{
   color: var(--blue);
   background-color: var(--white);
   box-shadow: 0px 1px 0px var(--white);
 }
-.services ul {
-  list-style: none;
-}
 .services-item {
   background: none;
 }
-.services h2 {
-  color: var(--black);
-}
-.services p {
+.services-heading {
   color: var(--black);
 }
 
 /* О нас и контакты */
-.main-column h2 {
+.main-column .heading {
   color: var(--black);
-}
-.main-column p {
-  color: var(--black);
-  font-family: "PT Sans", "Tahoma", sans-serif;
-  font-size: 13px;
-  line-height: 24px;
 }
 .main-about ul {
   list-style-image: url(../img/list-marker.svg);
@@ -386,9 +394,6 @@ img {
 .footer-contacts .tel {
   color: var(--white);
 }
-.footer-nav ul {
-  list-style: none;
-}
 .footer-nav-global a {
   color: var(--white);
 }
@@ -400,9 +405,6 @@ img {
   color: var(--white);
   font-size: 16px;
   line-height: 18px;
-}
-.social ul {
-  list-style: none;
 }
 .social a {
   color: var(--white);
