@@ -72,6 +72,7 @@
   --special-blue: #3bbce3;
   --lilac: #dc91d8;
   --special-green: #8ed78f;
+  --special-dark: #405069;
   --transparent: rgba(255, 255, 255, 0.5);
   --transparent30: rgba(255, 255, 255, 0.3);
   --logo-shadow: rgba(0, 0, 0, 0.24);
@@ -368,7 +369,7 @@ img {
   font-weight: 700;
   color: var(--white);
   background-color: var(--blue);
-  box-shadow: 0px 1px 0px var(--dark-blue), inset 0px 1px 0px #405069;
+  box-shadow: 0px 1px 0px var(--dark-blue), inset 0px 1px 0px var(--special-dark);
 }
 .service-switch label:hover {
   background-color: var(--dark-blue);
