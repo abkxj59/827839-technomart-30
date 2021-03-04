@@ -23,12 +23,11 @@
           </a>
           <form class="search">
             <label>
-              <img src="https://via.placeholder.com/20" alt="Поиск">
               <input class="search-input" type="search" id="search-in-header" placeholder="Поиск:">
             </label>
           </form>
-          <a class="button-favorite" href="#"><p><img class="icon" src="https://via.placeholder.com/20" alt="Закладки">Закладки: 0</p></a>
-          <a class="button-cart" href="#"><p><img class="icon" src="https://via.placeholder.com/20" alt="Корзина">Корзина: 0</p></a>
+          <a class="button-favorite" href="#">Закладки: 0</a>
+          <a class="button-cart" href="#">Корзина: 0</a>
           <a class="button-order" href="#">Оформить заказ</a>
         </div>
       </div>
@@ -64,15 +63,15 @@
           </section>
         </div>
         <nav class="main-nav container">
-          <ul>
-            <li class="main-nav-item"><a href="index.html">Главная</a></li>
-            <li class="main-nav-item"><a href="#">Компания</a></li>
-            <li class="main-nav-item"><a href="catalog.html">Каталог</a></li>
-            <li class="main-nav-item"><a href="#">Новости</a></li>
-            <li class="main-nav-item"><a href="#">Спецпредложения</a></li>
-            <li class="main-nav-item"><a href="#">Доставка</a></li>
-            <li class="main-nav-item"><a href="#">Контакты</a></li>
-          </ul>
+          <ul class="main-nav-list">
+            <li class="main-nav-item"><a class="main-nav-link" href="index.html">Главная</a></li>
+            <li class="main-nav-item"><a class="main-nav-link" href="#">Компания</a></li>
+            <li class="main-nav-item"><a class="main-nav-link" href="catalog.html">Каталог</a></li>
+            <li class="main-nav-item"><a class="main-nav-link" href="#">Новости</a></li>
+            <li class="main-nav-item"><a class="main-nav-link" href="#">Спецпредложения</a></li>
+            <li class="main-nav-item"><a class="main-nav-link" href="#">Доставка</a></li>
+            <li class="main-nav-item"><a class="main-nav-link" href="#">Контакты</a></li>
+        </ul>
         </nav>
       </div>
     </header>
@@ -83,27 +82,22 @@
         <ul class="goods-list">
           <li class="goods-item materials">
             <h3 class="goods-title">Материалы</h3>
-            <img class="icon" src="https://via.placeholder.com/70" alt="Материалы">
             <a class="button" href="#">На любой вкус</a>
           </li>
           <li class="goods-item tools">
             <h3 class="goods-title">Инструмент</h3>
-            <img class="icon" src="https://via.placeholder.com/70" alt="Инструмент">
             <a class="button" href="#">На все случаи</a>
           </li>
           <li class="goods-item machines">
             <h3 class="goods-title">Техника</h3>
-            <img class="icon" src="https://via.placeholder.com/70" alt="Техника">
             <a class="button" href="#">Для стройки</a>
           </li>
           <li class="goods-item sale">
             <h3 class="goods-title">Скидки 50%</h3>
-            <img class="icon" src="https://via.placeholder.com/70" alt="Скидки">
             <a class="button" href="#">На 350 товаров</a>
           </li>
           <li class="goods-item delivery">
             <h3 class="goods-title">Доставка</h3>
-            <img class="icon" src="https://via.placeholder.com/70" alt="Доставка">
             <a class="button" href="#">Бесплатно</a>
           </li>
           <li class="goods-item-slider">
@@ -201,7 +195,7 @@
       <section class="services">
         <div class="container">
           <h2 class="heading services-heading">Сервисы</h2>
-          <p class="services-text">Хороший интернет-магазин отличается от плохого не только ценами!
+          <p class="services-text">Хороший интернет-магазин отличается от плохого не только ценами!<br>
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <form class="service-switch">
             <input type="radio" id="delivery" name="service" value="delivery" checked>
@@ -216,7 +210,6 @@
               <h3 class="heading">Доставка</h3>
               <p class="text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
                 Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-              <img class="service-img" src="https://via.placeholder.com/450x250" alt="Доставка">
             </li>
             <li class="services-item guarantee">
               <h3 class="heading">Гарантия</h3>
@@ -224,13 +217,11 @@
                 а таже в случае пожара, спровоцированного его возгоранием,
                 вы всегда можете быть уверены в нашей гарантии. Мы обменяем
                 сгоревший товар на новый. Дом уж восстановите как-нибудь сами</p>
-              <img class="service-img" src="https://via.placeholder.com/450x250" alt="Гарантия">
             </li>
             <li class="services-item credit">
               <h3 class="heading">Кредит</h3>
               <p class="text">Залезть в долговую яму стало проще!
                 Кредитные консультанты придут вам на помощь.</p>
-              <img class="service-img" src="https://via.placeholder.com/450x250" alt="Кредит">
               <a class="button" href="#">Отправить заявку</a>
             </li>
           </ul>
@@ -302,7 +293,7 @@
           </section>
           <section class="social">
             <h2>Соцсети</h2>
-            <ul>
+            <ul class="social-list">
               <li><a class="social-button" href="#"><img class="social-icon" src="https://via.placeholder.com/45"  alt="Вконтакте">Вконтакте</a></li>
               <li><a class="social-button" href="#"><img class="social-icon" src="https://via.placeholder.com/45"  alt="Facebook">Facebook</a></li>
               <li><a class="social-button" href="#"><img class="social-icon" src="https://via.placeholder.com/45"  alt="Instagram">Instagram</a></li>
@@ -310,8 +301,10 @@
           </section>
           <section class="footer-links">
             <h2>Ссылки</h2>
-            <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-            <p>Разработано - <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+            <ul class="links-list">
+              <li class="links-item"><p>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p></li>
+              <li class="links-item"><p>Разработано - <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p></li>
+            </ul>
           </section>
         </div>
       </div>
